@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="interactive-bg"></div>
+    <div id="left-bar">
+        <img id="profilePicture" src="profile.jpg" alt="profilePicture">
+        <h1>Santiago Leon</h1>
+        <div class="indice">
+            <a href="#inicio" onclick="showSection('sobre-mi')">⌂ Inicio</a>
+            <a href="#objetivos" onclick="showSection('objetivos')">⊕ Objetivos</a>
+            <a href="#principios" onclick="showSection('principios')">✦ Principios</a>
+            <a href="#certificaciones" onclick="showSection('certificaciones')">⁂ Certificaciones</a>
+            <a href="#servicios" onclick="showSection('servicios')">⚙ Servicios</a>
+            <a href="#proyectos" onclick="showSection('proyectos')">※ Proyectos</a>
+            <a href="#contacto" onclick="showSection('contacto')">@ Contacto</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <section id="sobre-mi" class="section active">
+            <h2>Sobre Mí</h2>
+            <div class="about-container">
+                <p>Soy Joel Santiago Sierra Leon, un apasionado Desarrollador Web y de Software, enfocado en crear aplicaciones sólidas y efectivas. Con experiencia en tecnologías como Python, HTML, CSS, JavaScript, Java y MySQL, mi objetivo es ofrecer soluciones innovadoras que se adapten a las necesidades del cliente.</p>
+                <p>Mi interés en la programación va más allá del código; disfruto del proceso creativo y de encontrar maneras de optimizar cada paso del desarrollo. La constante actualización de conocimientos y el crecimiento profesional son parte de mi compromiso para mantenerme a la vanguardia en un sector en constante evolución.</p>
+            </div>
+            <div class="resume-buttons">
+                <button class="resume-button">Descargar CV en PDF</button>
+                <button class="resume-button">Descargar CV en Word</button>
+            </div>
+        </section>
+
+        <section id="objetivos" class="section">
+            <h2>Objetivos</h2>
+            <p>Mi enfoque está en el desarrollo y crecimiento constante dentro del campo del desarrollo de software. A través de objetivos claros y alcanzables, busco no solo mejorar mis habilidades actuales, sino también expandir mi conocimiento en tecnologías emergentes que puedan potenciar mis proyectos.</p>
+            
+            <ul class="objectives-list">
+                <li><strong>Mejorar habilidades en el desarrollo web y backend</strong>, consolidando mi experiencia en tecnologías como Python, HTML, CSS, JavaScript, Java y MySQL.</li>
+                <li><strong>Optimizar la calidad y eficiencia en mis proyectos</strong> mediante el aprendizaje de mejores prácticas y patrones de diseño que faciliten el mantenimiento y escalabilidad del software.</li>
+                <li><strong>Explorar y aprender .NET y C#</strong>, ampliando mi stack tecnológico y habilitándome para trabajar en aplicaciones robustas en el ecosistema de Microsoft.</li>
+                <li><strong>Establecer relaciones profesionales de confianza</strong> a través de una comunicación efectiva y una colaboración cercana, logrando una alineación sólida con las expectativas de cada cliente y proyecto.</li>
+                <li><strong>Contribuir a la innovación en el desarrollo de software</strong>, aplicando nuevas herramientas y técnicas de programación para ofrecer soluciones más innovadoras y efectivas.</li>
+            </ul>
+        </section>
+
+        <div id="principios" class="section">
+            <h2>Principios</h2>
+            <h3>Misión</h3>
+            <p>Como profesional mi mision es desarrollar aplicaciones web y backend de alta calidad, facilitando la comunicación entre el cliente y el equipo de desarrollo a través de una interacción clara y efectiva. Mi enfoque en la programación me permite crear soluciones técnicas sólidas, mientras que mis habilidades sociales y comunicativas aseguran que los proyectos se ejecuten de manera fluida y alineada con las expectativas del cliente. Al ofrecer mis servicios en plataformas digitales, como LinkedIn, mi ventaja competitiva reside en la capacidad de establecer relaciones asertivas y organizar mi tiempo de manera eficiente, diferenciándome de otros profesionales en mi campo.
+            </p>
+            <h3>Visión</h3>
+            <p>Mi visión es consolidarme como un programador de excelencia, destacando no solo por mis habilidades técnicas, sino también por mi capacidad de comunicación y mis habilidades sociales. Aspiro a alcanzar mis metas personales y profesionales, disfrutando del éxito desde mi hogar, sabiendo que he incorporado buenas prácticas tanto en la programación como en el trabajo en equipo. Me enfoco en mi propio crecimiento, pero también en construir relaciones de confianza con mis clientes, mientras amplío mi alcance para llegar a más personas. Mantendré y fortaleceré mi motivación para seguir desarrollando mis conocimientos y habilidades.</p>
+            <h3>Valores</h3>
+            <ul>
+                <li>Responsabilidad</li>
+                <li>Compromiso</li>
+                <li>Integridad</li>
+                <li>Innovación</li>
+            </ul>
+        </div>
+
+        <div class="section" id="certificaciones">
+            <h2>Certificaciones</h2>
+            <div class="certificates-container">
+                <div class="certificate-item">
+                    <img src="Certificado 1.jpg" alt="Certificado 1" class="certificate" onclick="openModal(this.src)">
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificado 2.jpg" alt="Certificado 2" class="certificate" onclick="openModal(this.src)">
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificado 3.jpg" alt="Certificado 3" class="certificate" onclick="openModal(this.src)">
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificado 4.jpg" alt="Certificado 4" class="certificate" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para mostrar el certificado en grande -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+        
+
+        <section id="servicios" class="section">
+            <h2>Servicios</h2>
+            <ul class="services-list">
+                <li><strong>Python:</strong></li>
+                <p>Lenguaje versátil para desarrollo web, automatización y análisis de datos.</p>
+                <li><strong>HTML y CSS:</strong></li>
+                <p>Bases sólidas para crear interfaces web atractivas y responsivas.</p>
+                <li><strong>JavaScript:</strong></li>
+                <p>Potente para programación web interactiva y dinámica en el frontend.</p>
+                <li><strong>Java:</strong></li>
+                <p>Ideal para desarrollo de aplicaciones robustas y multiplataforma.</p>
+                <li><strong>MySQL:</strong></li>
+                <p>Gestión eficaz de bases de datos relacionales para aplicaciones seguras y escalables.</p>
+            </ul>
+        </section>
+
+        <div id="proyectos" class="section">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Sistema de Gestion de Usuarios</h3>
+                <p>El proyecto se realizo usando el Lenguaje Python, se propuso la creacion de un sistema en el cual se facilitara a un administrador la Creacion, Lectura, Actualizacion y Eliminacion de Usuarios sus Estados dentro de la empresa, ademas de la organizacion de tematicas horarios docencia, entre otros.</p>
+            </div>
+            <div class="project">
+                <h3>Kario Media</h3>
+                <p>En este proyecto se dio una propuesta de diseño HTML y CSS de un aplicativo web para la correcta interaccion y/o navegacion del usuario dentro del mismo, ademas de la implementacion de animaciones de carga y la caracteristica "Responsive" la cual prioriza la correcta visualizacion del mismo aplicativo en multiples dispositivos</p>
+            </div>
+            <div class="project">
+                <h3>CampusBike</h3>
+                <p>Se realiza un proyecto aplicando el conocimiento de Bases de Datos usando MySQL en el cual se pueda manejar informacion relacionada con tipos de usuarios, tipos de personas, items, ventas, entre otros y que esta informacionse pueda manejar, y almacenar correctamente para despues ser legible por medio de consultas y subconsultas SQL.</p>
+            </div>
+        </div>
+
+        <div id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de las siguientes plataformas:</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/joel-santiago-sierra-leon-691153208/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Santiago3336" target="_blank">GitHub</a>
+                <a href="mailto:j.santiagolseon@gmail.com">Correo Electrónico</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
