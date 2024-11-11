@@ -78,7 +78,7 @@ p, .objectives-list li, .services-list li {
     display: flex;
     align-items: stretch;
     width: 70%;
-    height: 55%;
+    height: 63%;
     justify-content: space-evenly;
     flex-direction: column;
     align-content: flex-start;
