@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+        <!-- Indice / Barra de navegacion  -->
     <div id="interactive-bg"></div>
     <div id="left-bar">
         <img id="profilePicture" src="profile.jpg" alt="profilePicture">
@@ -22,6 +24,8 @@
         </div>
     </div>
 
+
+        <!-- container About me -->
     <div id="content">
         <section id="sobre-mi" class="section active">
             <h2>Sobre Mí</h2>
@@ -30,15 +34,16 @@
                 <p>Mi interés en la programación va más allá del código; disfruto del proceso creativo y de encontrar maneras de optimizar cada paso del desarrollo. La constante actualización de conocimientos y el crecimiento profesional son parte de mi compromiso para mantenerme a la vanguardia en un sector en constante evolución.</p>
             </div>
             <div class="resume-buttons">
-                <button class="resume-button">Descargar CV en PDF</button>
-                <button class="resume-button">Descargar CV en Word</button>
+                <a href="Joel Santiago Sierra Leon - 2024-10-24 - CVE - Con Contacto.pdf" download class="button">Descargar CV en Español</a>
+                <a href="Joel Santiago Sierra Leon - 2024-10-24 - CVI.pdf" download class="button">Download CV in English</a>
             </div>
         </section>
 
+            <!-- Container Goals -->
         <section id="objetivos" class="section">
             <h2>Objetivos</h2>
             <p>Mi enfoque está en el desarrollo y crecimiento constante dentro del campo del desarrollo de software. A través de objetivos claros y alcanzables, busco no solo mejorar mis habilidades actuales, sino también expandir mi conocimiento en tecnologías emergentes que puedan potenciar mis proyectos.</p>
-            
+
             <ul class="objectives-list">
                 <li><strong>Mejorar habilidades en el desarrollo web y backend</strong>, consolidando mi experiencia en tecnologías como Python, HTML, CSS, JavaScript, Java y MySQL.</li>
                 <li><strong>Optimizar la calidad y eficiencia en mis proyectos</strong> mediante el aprendizaje de mejores prácticas y patrones de diseño que faciliten el mantenimiento y escalabilidad del software.</li>
@@ -48,6 +53,8 @@
             </ul>
         </section>
 
+
+            <!-- Container principios -->
         <div id="principios" class="section">
             <h2>Principios</h2>
             <h3>Misión</h3>
@@ -64,6 +71,8 @@
             </ul>
         </div>
 
+
+            <!-- Container Certificaciones (aplicar el poder agregar mas certificados par ael futuro) -->
         <div class="section" id="certificaciones">
             <h2>Certificaciones</h2>
             <div class="certificates-container">
@@ -81,14 +90,14 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal para mostrar el certificado en grande -->
         <div id="modal" class="modal" onclick="closeModal()">
             <span class="close">&times;</span>
             <img class="modal-content" id="modal-img">
         </div>
-        
 
+            <!-- Container Services -->
         <section id="servicios" class="section">
             <h2>Servicios</h2>
             <ul class="services-list">
@@ -105,6 +114,7 @@
             </ul>
         </section>
 
+            <!-- Container proyects -->
         <div id="proyectos" class="section">
             <h2>Proyectos</h2>
             <div class="project">
@@ -121,6 +131,8 @@
             </div>
         </div>
 
+
+            <!-- Container contacto  -->
         <div id="contacto" class="section">
             <h2>Contacto</h2>
             <p>Puedes contactarme a través de las siguientes plataformas:</p>
